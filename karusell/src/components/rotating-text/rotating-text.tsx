@@ -20,7 +20,7 @@ interface Props {
 
 const RotatingText = ({
   organizations,
-  duration = 2.5,
+  duration = 4,
   direction = 'vertical',
   className,
   color
@@ -29,21 +29,23 @@ const RotatingText = ({
     <span
       key={name + startTime}
       style={{
-        animation: `${direction}-rotate ${duration
-          }s linear infinite 0s`,
+        animation: `${direction}-rotate ${duration}s linear`,
         animationDelay: `${startTime}s`,
         color: color || 'inherit'
       }}
       className={className || ''}
     >
+      {`Se ${datasetCount} datasett fra: `}
+      <a href={`https://www.data.norge.no/organizations/${id}`} target="_blank" rel="noopener noreferrer" color='White'>
       {name}
+      </a>
     </span>
   )
   
   return (
     <>
       <span className='rotating-text-container'>
-        {organizations.map((org, i) => createText(org.prefLabel.nb, org.id, org.datasetCount, i * duration))} &nbsp;
+        {organizations.map((org, i) => createText(org.prefLabel.nb, org.id, org.datasetCount, i * duration))}
       </span>
     </>
   )
@@ -53,4 +55,4 @@ export default RotatingText
 
 
 {/* har {randomOrg.datasetCount} datasett */}
-{/* <a href={`https://www.data.norge.no/organizations/${randomOrg.id}`} target="_blank" rel="noopener noreferrer"></a> */}
+{/*  */}

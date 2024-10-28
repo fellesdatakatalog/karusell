@@ -1,6 +1,5 @@
 .rotating-text-container {
-    position: relative;
-    display: inline-block;
+    display: flex;
     white-space: nowrap;
   }
   
@@ -11,11 +10,15 @@
     gap: 0;
     position: absolute;
   }
+
+  .rotating-text-container a {
+    color:white
+  }
   
   @keyframes vertical-rotate {
     0% {
       opacity: 0;
-      transform: translateY(-20px);
+      transform: translateY(0px);
     }
     5% {
       opacity: 1;
@@ -25,7 +28,7 @@
       opacity: 1;
       transform: translateY(0px);
     }
-    20% {
+    90% {
       opacity: 0;
       transform: translateY(20px);
     }

@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import organizations from '../../orgs.json';
 import RotatingText from '../rotating-text/rotating-text.tsx';
 // import RotatingText from '../rotating-text/rotating-text2.tsx';
 
 
 const Karusell = () => {
-    const filteredOrgs = organizations.filter(org => org.datasetCount > 9);
-
+    const filteredOrgs = organizations.filter(org => org.datasetCount > 10);
 
     return (
         <div>
