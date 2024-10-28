@@ -1,4 +1,5 @@
-# karusell
+# karusell -Hackathon 28.10.2024
+forslag til karusell for presentasjon av organisasjon og selskaper som deler data på data.norge
 
 Playground for carousel-function for data.norge.no frontpage
 
