@@ -1,3 +1,5 @@
+# This functionality has been fully adopted by fdk-frontend: https://github.com/Informasjonsforvaltning/fdk-frontend/commit/f9ee5947f8334bc8428c8a6bc8ddbb72d9fe468b
+
 # karusell -Hackathon 28.10.2024
 forslag til karusell for presentasjon av organisasjon og selskaper som deler data på data.norge
 
